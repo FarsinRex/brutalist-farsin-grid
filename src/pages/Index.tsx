@@ -1,22 +1,7 @@
 
 import React, { useEffect } from 'react';
-import { 
-  Code, 
-  FileCode, 
-  Cpu, 
-  Database, 
-  Server, 
-  Github,
-  User,
-  Folder,
-  Mail,
-  Briefcase
-} from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { 
-  Card,
-  CardContent
-} from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
 const Index = () => {
@@ -38,120 +23,134 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen max-w-4xl mx-auto px-6 py-12 font-helvetica">
-      {/* Header */}
-      <header className="mb-16">
-        <h1 className="text-4xl md:text-5xl font-light mb-6 terracotta-header">
+    <div className="space-y-32">
+      {/* Hero Section with Huge Whitespace */}
+      <section className="min-h-[60vh] flex flex-col justify-center">
+        <h1 className="text-6xl md:text-7xl font-light mb-6 text-brutalist-900">
           Hi, I'm Farsin.
         </h1>
-        <p className="text-lg text-brutalist-700 max-w-2xl">
+        <p className="text-xl text-brutalist-700 max-w-2xl">
           I design, plan and build things. I'm a chemical engineer by profession, developer by passion.
         </p>
-      </header>
+        
+        {/* Simple Navigation */}
+        <div className="mt-24">
+          <ul className="flex flex-wrap gap-x-10 gap-y-2">
+            <li>
+              <Link to="/about" className="text-lg text-brutalist-900 hover:after:content-[''] hover:after:block hover:after:w-full hover:after:h-px hover:after:bg-brutalist-900 hover:after:mt-1">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects" className="text-lg text-brutalist-900 hover:after:content-[''] hover:after:block hover:after:w-full hover:after:h-px hover:after:bg-brutalist-900 hover:after:mt-1">
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="text-lg text-brutalist-900 hover:after:content-[''] hover:after:block hover:after:w-full hover:after:h-px hover:after:bg-brutalist-900 hover:after:mt-1">
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="/hire-me" className="text-lg text-brutalist-900 hover:after:content-[''] hover:after:block hover:after:w-full hover:after:h-px hover:after:bg-brutalist-900 hover:after:mt-1">
+                Hire Me
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-      {/* Navigation */}
-      <nav className="mb-32">
-        <ul className="flex flex-wrap gap-8">
-          <li>
-            <Link to="/about" className="text-xl text-brutalist-900 hover:underline transition-all">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/projects" className="text-xl text-brutalist-900 hover:underline transition-all">
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" className="text-xl text-brutalist-900 hover:underline transition-all">
-              Contact
-            </Link>
-          </li>
-          <li>
-            <Link to="/hire-me" className="text-xl text-brutalist-900 hover:underline transition-all">
-              Hire Me
-            </Link>
-          </li>
-        </ul>
-      </nav>
-
-      {/* Tech Sections - Stacked vertically */}
-      <div className="space-y-8">
+      {/* Skills Sections - Vertical Stacking */}
+      <section className="space-y-16">
+        <h2 className="text-3xl font-normal text-brutalist-900 mb-8">What I work with</h2>
+        
         {/* Languages Section */}
-        <Card className="border-0 shadow-md rounded-lg bg-brutalist-100/80 hover:shadow-lg transition-all duration-300">
-          <CardContent className="p-8">
-            <h3 className="text-xl font-normal mb-4">Languages</h3>
-            <div className="flex flex-wrap gap-2">
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">Python</Badge>
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">JavaScript</Badge>
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">HTML</Badge>
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">CSS</Badge>
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">SQL</Badge>
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">C++</Badge>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="group">
+          <h3 className="text-xl font-normal mb-4 text-brutalist-700">Languages</h3>
+          <Card className="border-0 rounded-lg bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300">
+            <CardContent className="p-8">
+              <div className="flex flex-wrap gap-3">
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">Python</Badge>
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">JavaScript</Badge>
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">HTML</Badge>
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">CSS</Badge>
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">SQL</Badge>
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">C++</Badge>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
         
         {/* Dev Tools Section */}
-        <Card className="border-0 shadow-md rounded-lg bg-brutalist-100/80 hover:shadow-lg transition-all duration-300">
-          <CardContent className="p-8">
-            <h3 className="text-xl font-normal mb-4">Dev Tools</h3>
-            <div className="flex flex-wrap gap-2">
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">React.JS</Badge>
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">Tailwind CSS</Badge>
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">Express</Badge>
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">Node</Badge>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="group">
+          <h3 className="text-xl font-normal mb-4 text-brutalist-700">Dev Tools</h3>
+          <Card className="border-0 rounded-lg bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300">
+            <CardContent className="p-8">
+              <div className="flex flex-wrap gap-3">
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">React.JS</Badge>
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">Tailwind CSS</Badge>
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">Express</Badge>
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">Node</Badge>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
         
         {/* AI & ML Section */}
-        <Card className="border-0 shadow-md rounded-lg bg-brutalist-100/80 hover:shadow-lg transition-all duration-300">
-          <CardContent className="p-8">
-            <h3 className="text-xl font-normal mb-4">AI & ML</h3>
-            <div className="flex flex-wrap gap-2">
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">GPT</Badge>
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">LLMs</Badge>
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">Gemini/GPT APIs</Badge>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="group">
+          <h3 className="text-xl font-normal mb-4 text-brutalist-700">AI & ML</h3>
+          <Card className="border-0 rounded-lg bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300">
+            <CardContent className="p-8">
+              <div className="flex flex-wrap gap-3">
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">GPT</Badge>
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">LLMs</Badge>
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">Gemini/GPT APIs</Badge>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
         
         {/* Databases & Backends Section */}
-        <Card className="border-0 shadow-md rounded-lg bg-brutalist-100/80 hover:shadow-lg transition-all duration-300">
-          <CardContent className="p-8">
-            <h3 className="text-xl font-normal mb-4">Databases & Backends</h3>
-            <div className="flex flex-wrap gap-2">
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">MongoDB</Badge>
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">SQL</Badge>
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">REST APIs</Badge>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="group">
+          <h3 className="text-xl font-normal mb-4 text-brutalist-700">Databases & Backends</h3>
+          <Card className="border-0 rounded-lg bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300">
+            <CardContent className="p-8">
+              <div className="flex flex-wrap gap-3">
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">MongoDB</Badge>
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">SQL</Badge>
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">REST APIs</Badge>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
         
         {/* System Design Section */}
-        <Card className="border-0 shadow-md rounded-lg bg-brutalist-100/80 hover:shadow-lg transition-all duration-300">
-          <CardContent className="p-8">
-            <h3 className="text-xl font-normal mb-4">System Design</h3>
-            <div className="flex flex-wrap gap-2">
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">High availability</Badge>
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">Fault tolerance</Badge>
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">DB arch</Badge>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="group">
+          <h3 className="text-xl font-normal mb-4 text-brutalist-700">System Design</h3>
+          <Card className="border-0 rounded-lg bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300">
+            <CardContent className="p-8">
+              <div className="flex flex-wrap gap-3">
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">High availability</Badge>
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">Fault tolerance</Badge>
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">DB arch</Badge>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
         
         {/* Tools & Software Section */}
-        <Card className="border-0 shadow-md rounded-lg bg-brutalist-100/80 hover:shadow-lg transition-all duration-300">
-          <CardContent className="p-8">
-            <h3 className="text-xl font-normal mb-4">Tools & Software</h3>
-            <div className="flex flex-wrap gap-2">
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">Git/GitHub</Badge>
-              <Badge className="bg-brutalist-200 text-brutalist-900 hover:bg-brutalist-300">VS Code</Badge>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
+        <div className="group">
+          <h3 className="text-xl font-normal mb-4 text-brutalist-700">Tools & Software</h3>
+          <Card className="border-0 rounded-lg bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300">
+            <CardContent className="p-8">
+              <div className="flex flex-wrap gap-3">
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">Git/GitHub</Badge>
+                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">VS Code</Badge>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
     </div>
   );
 };

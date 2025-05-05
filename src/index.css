@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -34,7 +35,7 @@
     --input: 0 0% 89%;
     --ring: 0 0% 3.9%;
 
-    --radius: 0;
+    --radius: 0.5rem;
     
     --terracotta: 14 80% 45%;
     --olive: 60 25% 40%;
@@ -45,7 +46,8 @@
   }
 
   body {
-    @apply bg-background text-foreground font-worksans;
+    @apply bg-background text-foreground;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
