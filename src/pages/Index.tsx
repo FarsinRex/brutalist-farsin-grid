@@ -6,7 +6,11 @@ import {
   Cpu, 
   Database, 
   Server, 
-  Github
+  Github,
+  User,
+  Folder,
+  Mail,
+  Briefcase
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { 
