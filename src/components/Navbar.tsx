@@ -5,7 +5,7 @@ import { User, Folder, Mail, Briefcase } from 'lucide-react';
 
 const Navbar = () => {
   return (
-    <nav className="fixed left-0 top-1/3 p-6 md:p-8 z-50">
+    <nav className="fixed left-0 top-1/4 p-6 md:p-8 z-50">
       <ul className="space-y-4 md:space-y-6">
         <li>
           <Link to="/about" className="nav-item group flex items-center">

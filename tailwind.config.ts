@@ -78,6 +78,8 @@ export default {
           '800': '#222222',
           '900': '#000000',
         },
+        terracotta: 'hsl(var(--terracotta))',
+        olive: 'hsl(var(--olive))',
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -86,6 +88,7 @@ export default {
       },
       fontFamily: {
         'brutalist': ['Space Mono', 'monospace'],
+        'worksans': ['Work Sans', 'sans-serif'],
       },
       keyframes: {
         'accordion-down': {
