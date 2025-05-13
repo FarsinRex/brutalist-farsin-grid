@@ -9,7 +9,7 @@ const Footer = () => {
           <p className="text-sm text-brutalist-600">© {new Date().getFullYear()} Farsin. All rights reserved.</p>
         </div>
         <div className="text-right">
-          <p className="text-sm text-brutalist-600">Dadar, Mumbai, 40074</p>
+          <p className="text-sm text-brutalist-600">Mumbai, India</p>
         </div>
       </div>
     </footer>
