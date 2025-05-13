@@ -32,50 +32,24 @@ const Index = () => {
         <p className="text-xl text-brutalist-700 max-w-2xl">
           I design, plan and build things. I'm a chemical engineer by profession, developer by passion.
         </p>
-        
-        {/* Simple Navigation */}
-        <div className="mt-24">
-          <ul className="flex flex-wrap gap-x-10 gap-y-2">
-            <li>
-              <Link to="/about" className="text-lg text-brutalist-900 hover:after:content-[''] hover:after:block hover:after:w-full hover:after:h-px hover:after:bg-brutalist-900 hover:after:mt-1">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects" className="text-lg text-brutalist-900 hover:after:content-[''] hover:after:block hover:after:w-full hover:after:h-px hover:after:bg-brutalist-900 hover:after:mt-1">
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" className="text-lg text-brutalist-900 hover:after:content-[''] hover:after:block hover:after:w-full hover:after:h-px hover:after:bg-brutalist-900 hover:after:mt-1">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link to="/hire-me" className="text-lg text-brutalist-900 hover:after:content-[''] hover:after:block hover:after:w-full hover:after:h-px hover:after:bg-brutalist-900 hover:after:mt-1">
-                Hire Me
-              </Link>
-            </li>
-          </ul>
-        </div>
       </section>
 
       {/* Skills Sections - Vertical Stacking */}
-      <section className="space-y-16">
-        <h2 className="text-3xl font-normal text-brutalist-900 mb-8">What I work with</h2>
+      <section className="space-y-20">
+        <h2 className="text-3xl font-normal text-brutalist-900 mb-12">What I work with</h2>
         
         {/* Languages Section */}
         <div className="group">
           <h3 className="text-xl font-normal mb-4 text-brutalist-700">Languages</h3>
-          <Card className="border-0 rounded-lg bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300">
+          <Card className="border-0 rounded-lg bg-gradient-to-r from-amber-100 to-orange-100 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-1">
             <CardContent className="p-8">
-              <div className="flex flex-wrap gap-3">
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">Python</Badge>
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">JavaScript</Badge>
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">HTML</Badge>
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">CSS</Badge>
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">SQL</Badge>
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">C++</Badge>
+              <div className="flex flex-col space-y-3">
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">Python</Badge>
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">JavaScript</Badge>
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">HTML</Badge>
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">CSS</Badge>
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">SQL</Badge>
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">C++</Badge>
               </div>
             </CardContent>
           </Card>
@@ -84,13 +58,13 @@ const Index = () => {
         {/* Dev Tools Section */}
         <div className="group">
           <h3 className="text-xl font-normal mb-4 text-brutalist-700">Dev Tools</h3>
-          <Card className="border-0 rounded-lg bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300">
+          <Card className="border-0 rounded-lg bg-gradient-to-r from-amber-50 to-orange-50 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-1">
             <CardContent className="p-8">
-              <div className="flex flex-wrap gap-3">
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">React.JS</Badge>
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">Tailwind CSS</Badge>
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">Express</Badge>
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">Node</Badge>
+              <div className="flex flex-col space-y-3">
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">React.JS</Badge>
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">Tailwind CSS</Badge>
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">Express</Badge>
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">Node</Badge>
               </div>
             </CardContent>
           </Card>
@@ -99,12 +73,12 @@ const Index = () => {
         {/* AI & ML Section */}
         <div className="group">
           <h3 className="text-xl font-normal mb-4 text-brutalist-700">AI & ML</h3>
-          <Card className="border-0 rounded-lg bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300">
+          <Card className="border-0 rounded-lg bg-gradient-to-r from-amber-50 to-orange-50 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-1">
             <CardContent className="p-8">
-              <div className="flex flex-wrap gap-3">
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">GPT</Badge>
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">LLMs</Badge>
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">Gemini/GPT APIs</Badge>
+              <div className="flex flex-col space-y-3">
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">GPT</Badge>
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">LLMs</Badge>
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">Gemini/GPT APIs</Badge>
               </div>
             </CardContent>
           </Card>
@@ -113,26 +87,12 @@ const Index = () => {
         {/* Databases & Backends Section */}
         <div className="group">
           <h3 className="text-xl font-normal mb-4 text-brutalist-700">Databases & Backends</h3>
-          <Card className="border-0 rounded-lg bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300">
+          <Card className="border-0 rounded-lg bg-gradient-to-r from-amber-50 to-orange-50 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-1">
             <CardContent className="p-8">
-              <div className="flex flex-wrap gap-3">
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">MongoDB</Badge>
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">SQL</Badge>
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">REST APIs</Badge>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-        
-        {/* System Design Section */}
-        <div className="group">
-          <h3 className="text-xl font-normal mb-4 text-brutalist-700">System Design</h3>
-          <Card className="border-0 rounded-lg bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300">
-            <CardContent className="p-8">
-              <div className="flex flex-wrap gap-3">
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">High availability</Badge>
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">Fault tolerance</Badge>
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">DB arch</Badge>
+              <div className="flex flex-col space-y-3">
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">MongoDB</Badge>
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">SQL</Badge>
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">REST APIs</Badge>
               </div>
             </CardContent>
           </Card>
@@ -141,11 +101,11 @@ const Index = () => {
         {/* Tools & Software Section */}
         <div className="group">
           <h3 className="text-xl font-normal mb-4 text-brutalist-700">Tools & Software</h3>
-          <Card className="border-0 rounded-lg bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300">
+          <Card className="border-0 rounded-lg bg-gradient-to-r from-amber-50 to-orange-50 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-1">
             <CardContent className="p-8">
-              <div className="flex flex-wrap gap-3">
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">Git/GitHub</Badge>
-                <Badge className="bg-brutalist-100 text-brutalist-900 hover:bg-brutalist-200 px-4 py-2 rounded-full text-sm">VS Code</Badge>
+              <div className="flex flex-col space-y-3">
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">Git/GitHub</Badge>
+                <Badge className="w-fit bg-amber-500/20 text-amber-800 hover:bg-amber-500/30 px-4 py-2 rounded-full text-sm">VS Code</Badge>
               </div>
             </CardContent>
           </Card>
