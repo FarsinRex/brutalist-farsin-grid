@@ -109,7 +109,7 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="min-h-[60vh] flex flex-col justify-center">
-        <h1 className="text-xl md:text-2xl font-light mb-6 text-brutalist-900">
+        <h1 className="text-lg md:text-xl font-light mb-6 text-brutalist-900">
           Hi, I'm Farsin.
         </h1>
         <p className="text-xl text-brutalist-700 max-w-2xl">
@@ -181,11 +181,11 @@ const Index = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-              <div className="aspect-square bg-brutalist-300 brutal-shadow flex items-center justify-center text-brutalist-700">
-                <span className="text-xl">image_num_1</span>
+              <div className="aspect-square bg-brutalist-300 brutal-shadow flex items-center justify-center overflow-hidden">
+                <img src="/uploads/photo-1649972904349-6e44c42644a7" alt="Woman sitting on a bed using a laptop" className="w-full h-full object-cover" />
               </div>
-              <div className="aspect-square bg-brutalist-300 brutal-shadow flex items-center justify-center text-brutalist-700">
-                <span className="text-xl">image_num_2</span>
+              <div className="aspect-square bg-brutalist-300 brutal-shadow flex items-center justify-center overflow-hidden">
+                <img src="/uploads/photo-1488590528505-98d2b5aba04b" alt="Gray laptop computer" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
