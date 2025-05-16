@@ -7,28 +7,28 @@ const Navbar = () => {
     <nav className="max-w-7xl mx-auto w-full h-full flex items-center justify-end px-6 md:px-12 lg:px-16">
       <ul className="flex space-x-8 text-sm">
         <li>
-          <Link to="/about" className="text-brutalist-900 relative group">
+          <a href="/#about" className="text-brutalist-900 relative group">
             About
-            <span className="absolute -bottom-1 left-1/2 w-0 h-0 bg-brutalist-900 rounded-full transform -translate-x-1/2 group-hover:w-[6px] group-hover:h-[6px] transition-all duration-300"></span>
-          </Link>
+            <span className="absolute -bottom-1 left-1/2 w-0 h-0 bg-brutalist-900/20 rounded-full transform -translate-x-1/2 group-hover:w-[30px] group-hover:h-[30px] transition-all duration-300"></span>
+          </a>
         </li>
         <li>
-          <Link to="/projects" className="text-brutalist-900 relative group">
+          <a href="/#projects" className="text-brutalist-900 relative group">
             Projects
-            <span className="absolute -bottom-1 left-1/2 w-0 h-0 bg-brutalist-900 rounded-full transform -translate-x-1/2 group-hover:w-[6px] group-hover:h-[6px] transition-all duration-300"></span>
-          </Link>
+            <span className="absolute -bottom-1 left-1/2 w-0 h-0 bg-brutalist-900/20 rounded-full transform -translate-x-1/2 group-hover:w-[30px] group-hover:h-[30px] transition-all duration-300"></span>
+          </a>
         </li>
         <li>
-          <Link to="/contact" className="text-brutalist-900 relative group">
+          <a href="/#contact" className="text-brutalist-900 relative group">
             Contact
-            <span className="absolute -bottom-1 left-1/2 w-0 h-0 bg-brutalist-900 rounded-full transform -translate-x-1/2 group-hover:w-[6px] group-hover:h-[6px] transition-all duration-300"></span>
-          </Link>
+            <span className="absolute -bottom-1 left-1/2 w-0 h-0 bg-brutalist-900/20 rounded-full transform -translate-x-1/2 group-hover:w-[30px] group-hover:h-[30px] transition-all duration-300"></span>
+          </a>
         </li>
         <li>
-          <Link to="/hire-me" className="text-brutalist-900 relative group">
+          <a href="/#hire-me" className="text-brutalist-900 relative group">
             Hire Me
-            <span className="absolute -bottom-1 left-1/2 w-0 h-0 bg-brutalist-900 rounded-full transform -translate-x-1/2 group-hover:w-[6px] group-hover:h-[6px] transition-all duration-300"></span>
-          </Link>
+            <span className="absolute -bottom-1 left-1/2 w-0 h-0 bg-brutalist-900/20 rounded-full transform -translate-x-1/2 group-hover:w-[30px] group-hover:h-[30px] transition-all duration-300"></span>
+          </a>
         </li>
       </ul>
     </nav>

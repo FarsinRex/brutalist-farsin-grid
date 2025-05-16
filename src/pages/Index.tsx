@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -108,7 +109,7 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="min-h-[60vh] flex flex-col justify-center">
-        <h1 className="text-3xl md:text-4xl font-light mb-6 text-brutalist-900">
+        <h1 className="text-xl md:text-2xl font-light mb-6 text-brutalist-900">
           Hi, I'm Farsin.
         </h1>
         <p className="text-xl text-brutalist-700 max-w-2xl">
@@ -116,14 +117,14 @@ const Index = () => {
         </p>
       </section>
 
-      {/* Tech Stack Section - Modified layout */}
-      <section className="py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      {/* Tech Stack Section - Modified layout with smaller boxes */}
+      <section className="py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
           {/* Languages Card */}
-          <Card className="border-0 rounded-lg bg-[#FFF1F9] overflow-hidden">
-            <div className="p-4">
-              <h3 className="text-xl font-medium mb-3">Languages</h3>
-              <div className="grid grid-cols-2 gap-2">
+          <Card className="border-0 rounded-lg bg-[#FFF1F9] overflow-hidden h-auto">
+            <div className="p-3">
+              <h3 className="text-lg font-medium mb-2">Languages</h3>
+              <div className="grid grid-cols-2 gap-1 text-sm">
                 <div className="p-1">Python</div>
                 <div className="p-1">JavaScript</div>
                 <div className="p-1">HTML</div>
@@ -135,10 +136,10 @@ const Index = () => {
           </Card>
           
           {/* Dev Frameworks Card */}
-          <Card className="border-0 rounded-lg bg-[#39275B] text-white">
-            <div className="p-4">
-              <h3 className="text-xl font-medium mb-3">Dev Frameworks</h3>
-              <div className="grid grid-cols-2 gap-2">
+          <Card className="border-0 rounded-lg bg-[#39275B] text-white h-auto">
+            <div className="p-3">
+              <h3 className="text-lg font-medium mb-2">Dev Frameworks</h3>
+              <div className="grid grid-cols-2 gap-1 text-sm">
                 <div className="p-1">React.JS</div>
                 <div className="p-1">Tailwind CSS</div>
                 <div className="p-1">Express</div>
@@ -148,10 +149,10 @@ const Index = () => {
           </Card>
           
           {/* Tech Card */}
-          <Card className="border-0 rounded-lg bg-[#E8DDFF]">
-            <div className="p-4">
-              <h3 className="text-xl font-medium mb-3">Tech</h3>
-              <div className="grid grid-cols-2 gap-2">
+          <Card className="border-0 rounded-lg bg-[#E8DDFF] h-auto">
+            <div className="p-3">
+              <h3 className="text-lg font-medium mb-2">Tech</h3>
+              <div className="grid grid-cols-2 gap-1 text-sm">
                 <div className="p-1">GPT/LLMs</div>
                 <div className="p-1">MongoDB</div>
                 <div className="p-1">SQL</div>
@@ -161,6 +162,154 @@ const Index = () => {
               </div>
             </div>
           </Card>
+        </div>
+      </section>
+      
+      {/* About Section */}
+      <section id="about" className="pt-12 scroll-mt-20">
+        <div className="grid-layout">
+          <div className="col-span-12 md:col-span-8 md:col-start-2 lg:col-span-6 lg:col-start-2">
+            <h1 className="text-4xl md:text-5xl font-bold mb-12">About</h1>
+            
+            <div className="prose prose-lg max-w-none">
+              <p className="text-xl mb-6">
+                I'm from India and I code for passion. I've been building things towards sustainable development and machine learning stuff.
+              </p>
+              <p className="text-xl mb-6">
+                I have been coding from the last 4 years dealing with multiple stuffs include Python, C++, Javascript, Matlab, Tensorflow, Matplotlib, HTML5+CSS3, and many more interesting stuff.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+              <div className="aspect-square bg-brutalist-300 brutal-shadow flex items-center justify-center text-brutalist-700">
+                <span className="text-xl">image_num_1</span>
+              </div>
+              <div className="aspect-square bg-brutalist-300 brutal-shadow flex items-center justify-center text-brutalist-700">
+                <span className="text-xl">image_num_2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Projects Section */}
+      <section id="projects" className="pt-12 scroll-mt-20">
+        <div className="grid-layout">
+          <div className="col-span-12 md:col-span-8 md:col-start-2 lg:col-span-6 lg:col-start-2">
+            <h1 className="text-4xl md:text-5xl font-bold mb-12">Projects</h1>
+            
+            <ul className="grid grid-cols-2 gap-3">
+              {[
+                { title: "Portfolio Website", link: "#" },
+                { title: "Samakiya-fresh", link: "#" },
+                { title: "ML Project", link: "#" },
+                { title: "Data Visualization Tool", link: "#" }
+              ].map((project, index) => (
+                <li key={index} className="p-3 bg-brutalist-200 brutal-shadow">
+                  <h2 className="text-lg font-bold">{project.title}</h2>
+                  <a href={project.link} className="halo-link font-bold underline mt-1 inline-block text-sm">
+                    View
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      {/* Contact Section */}
+      <section id="contact" className="pt-12 scroll-mt-20">
+        <div className="grid-layout">
+          <div className="col-span-12 md:col-span-8 md:col-start-2 lg:col-span-6 lg:col-start-2">
+            <h1 className="text-4xl md:text-5xl font-bold mb-12">Contact</h1>
+            
+            <div className="grid grid-cols-2 gap-3">
+              {[
+                { title: "Email", value: "farsin@example.com", link: "mailto:farsin@example.com" },
+                { title: "GitHub", value: "github.com/farsin", link: "https://github.com/" },
+                { title: "LinkedIn", value: "linkedin.com/in/farsin", link: "https://linkedin.com/" },
+                { title: "Twitter", value: "@farsin", link: "https://twitter.com/" }
+              ].map((contact, index) => (
+                <div key={index} className="p-3 bg-brutalist-200 brutal-shadow">
+                  <h2 className="text-base font-bold mb-1">{contact.title}</h2>
+                  <a 
+                    href={contact.link} 
+                    className="halo-link font-medium underline text-sm" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    {contact.value}
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Hire Me Section */}
+      <section id="hire-me" className="pt-12 pb-16 scroll-mt-20">
+        <div className="grid-layout">
+          <div className="col-span-12 md:col-span-8 md:col-start-2 lg:col-span-6 lg:col-start-2">
+            <h1 className="text-3xl md:text-4xl font-bold mb-12">Hire Me</h1>
+            
+            <form className="space-y-6">
+              <div className="form-input-with-label">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder=" "
+                  className="w-full border-2 border-brutalist-900 p-3 bg-brutalist-100 brutal-shadow"
+                />
+                <label htmlFor="name" className="text-lg font-medium">Name</label>
+              </div>
+              
+              <div className="form-input-with-label">
+                <input
+                  type="tel"
+                  id="number"
+                  name="number"
+                  required
+                  placeholder=" "
+                  className="w-full border-2 border-brutalist-900 p-3 bg-brutalist-100 brutal-shadow"
+                />
+                <label htmlFor="number" className="text-lg font-medium">Number</label>
+              </div>
+              
+              <div className="form-input-with-label">
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder=" "
+                  rows={5}
+                  className="w-full border-2 border-brutalist-900 p-3 bg-brutalist-100 brutal-shadow"
+                ></textarea>
+                <label htmlFor="message" className="text-lg font-medium">Pitch your idea</label>
+              </div>
+              
+              <div className="form-input-with-label">
+                <input
+                  type="text"
+                  id="budget"
+                  name="budget"
+                  required
+                  placeholder=" "
+                  className="w-full border-2 border-brutalist-900 p-3 bg-brutalist-100 brutal-shadow"
+                />
+                <label htmlFor="budget" className="text-lg font-medium">Budget</label>
+              </div>
+              
+              <button 
+                type="submit"
+                className="btn-brutalist mt-4 w-full md:w-auto text-center text-lg font-bold py-3 px-8"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </div>
